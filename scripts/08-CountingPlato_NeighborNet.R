@@ -69,22 +69,22 @@ plot(nnet,
 dev.off()
 
 
-
-# library(rgl) 
-# # create animated gif file 
+# library(rgl)
+# # create animated gif file
 # #play3d(spin3d(axis=c(0,1,0), rpm=6), duration=10)
 # par3d(windowRect = c(20, 30, 800, 800))
 # plot(nnet,
 #      type = "3D",
-#      tip.color = nnet$color, 
-#      edge.color = "grey20",
+#      tip.color = "firebrick",
+#      edge.color = "grey30",
 #      edge.width = 1,
 #      font = 1,
 #      cex = 1,
 #      use.edge.length = T,
-#      label.offset = 0.1
+#      label.offset = 0.1,
+#      direction = "axial"
 # )
-# movie3d(spin3d(axis=c(0,1,0), rpm=3), 
-#         duration=8, 
-#         dir = ".",  
+# movie3d(spin3d(axis=c(0,1,0), rpm=3),
+#         duration=8,
+#         dir = ".",
 #         type = "gif")
