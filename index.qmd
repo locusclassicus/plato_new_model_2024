@@ -127,6 +127,10 @@ nodelabels(round(cons$node.label[2],2), 6,
 
 ![](images_bw/img6.png)
 
+## Конфликтующие сигналы
+
+![E. Paradis. Analysis of Phylogenetics and Evolution with R](./images_after_review/cons2.png)
+
 ## Консенсусная сеть: ConsensusNet
 
 ![](images_bw/img7.png)
