@@ -147,3 +147,57 @@ nodelabels(round(cons$node.label[2],2), 6,
 - репозиторий проекта: https://github.com/locusclassicus/plato_new_model_2024
 - тг-канал: @Rantiquity
 
+## Post Scriptum: из рецензии на статью
+
+> Комплексный стилометрический анализ действительно говорит не столько о хронологии, сколько о жанровых особенностях текста; в этом автор прав. Но хотелось бы узнать отношение автора к тем отдельным языковым различиям между разными диалогами, которые дали основание Диттенбергеру разделить диалоги на ранние и поздние (например, сочетания с μήν). Появление τί μήν в одной только группе диалогов невозможно объяснить ни жанром, ни темой. Случайностью этот факт тоже назвать сложно. Как можно его объяснить, если не хронологией?
+
+## Группы Диттенбергера
+
+![](./images_after_review/Dittenberger_screenshot.png)
+
+## Анализ 2-грам: диаграмма рассеяния
+
+![](./images_after_review/Dittenberger_scatterplot.png)
+
+## Анализ 2-грам: диаграмма размаха
+
+![](./images_after_review/Dittenberger_boxplot.png) 
+
+## Тесты на статистическую значимость
+
+```{r echo=FALSE}
+load("./data/mhn_sums.Rdata")
+library(dplyr)
+
+groupI <- mhn_sums |> 
+  filter(group == "I") |> 
+  pull(total_mhn)
+
+groupIIa <- mhn_sums |> 
+  filter(group == "IIa") |> 
+  pull(total_mhn)
+
+groupIIb <- mhn_sums |> 
+  filter(group == "IIb") |> 
+  pull(total_mhn)
+
+groupNA <- mhn_sums |> 
+  filter(group == "NA") |> 
+  pull(total_mhn)
+```
+
+```{r}
+t.test(groupI, groupIIa)
+t.test(groupIIa, groupIIb)
+t.test(groupI, groupNA)
+```
+
+
+## Критика Кейзера
+
+>  In forming these groups B. has begged the question (he uses a presumed approximate chronological order), he has counted not with respect to total number of replies (cp. above), and in comparing the three numbers he claims a clear trend but he fails to determine whether it is in fact statistically significant. Briefly the uncertainty σ for each ratio would be respectively 0.80 ± 0.15, 0.61 ± 0.08, and 0.40 + 0.07, and the level of significance of the pairwise differences would be z = 1.1 (73 %) and z = 2.0 (95 %). That is, those are the probabilities that the difference is significant—and most statisticians would consider anything less than 95% (I and most physicists prefer 99%) as insignificant. B. calculates (pp. 21-2) various ratios, which suffer from the same defect. Still, it is fair to say that Dittenberger showed that something was going on as revealed by the relative rates of the use of certain particles.
+
+[Источник](https://bmcr.brynmawr.edu/1992/1992.01.12/).
+
+
+

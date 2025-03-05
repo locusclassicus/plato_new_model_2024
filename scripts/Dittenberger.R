@@ -73,7 +73,7 @@ mhn_sums |>
         axis.title.x = element_blank()) +
   coord_flip()
 
-ggsave("Dittenberger_boxplot.png", height = 7, width = 6)
+ggsave("Dittenberger_boxplot.png", height = 7, width = 9)
 
 
 # тесты

@@ -472,6 +472,75 @@
 <li class="fragment">репозиторий проекта: https://github.com/locusclassicus/plato_new_model_2024</li>
 <li class="fragment">тг-канал: <span class="citation" data-cites="Rantiquity">@Rantiquity</span></li>
 </ul>
+</section>
+<section id="post-scriptum-из-рецензии-на-статью" class="slide level2">
+<h2>Post Scriptum: из рецензии на статью</h2>
+<blockquote>
+<p>Комплексный стилометрический анализ действительно говорит не столько о хронологии, сколько о жанровых особенностях текста; в этом автор прав. Но хотелось бы узнать отношение автора к тем отдельным языковым различиям между разными диалогами, которые дали основание Диттенбергеру разделить диалоги на ранние и поздние (например, сочетания с μήν). Появление τί μήν в одной только группе диалогов невозможно объяснить ни жанром, ни темой. Случайностью этот факт тоже назвать сложно. Как можно его объяснить, если не хронологией?</p>
+</blockquote>
+</section>
+<section id="группы-диттенбергера" class="slide level2">
+<h2>Группы Диттенбергера</h2>
+
+<img data-src="./images_after_review/Dittenberger_screenshot.png" class="r-stretch"></section>
+<section id="анализ-2-грам-диаграмма-рассеяния" class="slide level2">
+<h2>Анализ 2-грам: диаграмма рассеяния</h2>
+
+<img data-src="./images_after_review/Dittenberger_scatterplot.png" class="r-stretch"></section>
+<section id="анализ-2-грам-диаграмма-размаха" class="slide level2">
+<h2>Анализ 2-грам: диаграмма размаха</h2>
+
+<img data-src="./images_after_review/Dittenberger_boxplot.png" class="r-stretch"></section>
+<section id="тесты-на-статистическую-значимость" class="slide level2">
+<h2>Тесты на статистическую значимость</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  groupI and groupIIa
+t = -3.8473, df = 21.691, p-value = 0.0008924
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.0011473317 -0.0003432073
+sample estimates:
+   mean of x    mean of y 
+0.0007352891 0.0014805586 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  groupIIa and groupIIb
+t = -0.77196, df = 21.677, p-value = 0.4485
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.0010354988  0.0004740742
+sample estimates:
+  mean of x   mean of y 
+0.001480559 0.001761271 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  groupI and groupNA
+t = 0.77414, df = 30.689, p-value = 0.4448
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.0002257078  0.0005016956
+sample estimates:
+   mean of x    mean of y 
+0.0007352891 0.0005972952 </code></pre>
+</div>
+</div>
+</section>
+<section id="критика-кейзера" class="slide level2">
+<h2>Критика Кейзера</h2>
+<blockquote>
+<p>In forming these groups B. has begged the question (he uses a presumed approximate chronological order), he has counted not with respect to total number of replies (cp.&nbsp;above), and in comparing the three numbers he claims a clear trend but he fails to determine whether it is in fact statistically significant. Briefly the uncertainty σ for each ratio would be respectively 0.80 ± 0.15, 0.61 ± 0.08, and 0.40 + 0.07, and the level of significance of the pairwise differences would be z = 1.1 (73 %) and z = 2.0 (95 %). That is, those are the probabilities that the difference is significant—and most statisticians would consider anything less than 95% (I and most physicists prefer 99%) as insignificant. B. calculates (pp.&nbsp;21-2) various ratios, which suffer from the same defect. Still, it is fair to say that Dittenberger showed that something was going on as revealed by the relative rates of the use of certain particles.</p>
+</blockquote>
+<p><a href="https://bmcr.brynmawr.edu/1992/1992.01.12/">Источник</a>.</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
